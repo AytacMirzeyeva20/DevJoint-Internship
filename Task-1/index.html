@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE HALIA - Restaurant</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__brand">
+                <a href="#" class="nav__logo">THE HALIA</a>
+            </div>
+            <ul class="nav__list" id="nav-list">
+                <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#menu" class="nav__link">Menu</a></li>
+                <li class="nav__item"><a href="#gallery" class="nav__link">Gallery</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+            <button id="nav-toggle" class="nav__toggle" aria-label="Open navigation" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <button class="nav__btn" type="button">Book Now</button>
+        </nav>
+        <div class="hero">
+            <span class="hero__subtitle">Welcome</span>
+            <h1 class="hero__title">THE HALIA</h1>
+            <button class="hero__btn" type="button">Book Now</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="about" id="about">
+            <div class="about__content">
+                <span class="section__label">About</span>
+                <h2 class="about__title">The Halia Restuarant</h2>
+                <p class="about__text">
+                    On her way she met a copy. The copy warned the Little Blind Text, that
+                    where it came from it would have been rewritten a thousand times and
+                    everything that was left from its origin would be the word "and" and
+                    the Little Blind Text should turn around and return to its own, safe
+                    country. A small river named Duden flows by their place and supplies
+                    it with the necessary regelialia. It is a paradisematic country, in
+                    which roasted parts of sentences fly into your mouth.
+                </p>
+            </div>
+            <img
+                src="https://preview.colorlib.com/theme/pizza/images/about.jpg"
+                alt="The Halia restaurant interior"
+                class="about__image"
+            />
+        </section>
+
+        <section class="stats">
+            <div class="stats__grid">
+                <article class="stats__item">
+                    <i class="fa-solid fa-martini-glass" aria-hidden="true"></i>
+                    <p class="stats__title">Food</p>
+                </article>
+                <article class="stats__item">
+                    <i class="fa-solid fa-people-line" aria-hidden="true"></i>
+                    <p class="stats__title">Person</p>
+                </article>
+                <article class="stats__item">
+                    <i class="fa-solid fa-award" aria-hidden="true"></i>
+                    <p class="stats__title">Awards</p>
+                </article>
+                <article class="stats__item">
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                    <p class="stats__title">Branch</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="menu" id="menu">
+            <span class="section__label">Taste</span>
+            <h2 class="menu__title">Our Signature Dishes</h2>
+            <div class="menu__grid">
+                <article class="menu__card">
+                    <div class="menu__image-wrap">
+                        <img
+                            src="https://www.simplyquinoa.com/wp-content/uploads/2024/11/creamy-mushroom-pasta-18.jpg"
+                            alt="Creamy Pasta"
+                            class="menu__image"
+                        />
+                    </div>
+                    <div class="menu__body">
+                        <div class="menu__top">
+                            <h3 class="menu__name">Creamy Pasta</h3>
+                            <span class="menu__price">$12.99</span>
+                        </div>
+                        <p class="menu__description">Rich and creamy pasta with herbs and parmesan.</p>
+                    </div>
+                </article>
+
+                <article class="menu__card">
+                    <div class="menu__image-wrap">
+                        <img
+                            src="https://www.aussiemeat.hk/cdn/shop/articles/24xxxx-Recipes-Shopify1080_520x500_cbaed911-6a54-4e5f-a3ff-f93cb57b6282_600x.png?v=1778430165"
+                            alt="Grilled Salmon"
+                            class="menu__image"
+                        />
+                    </div>
+                    <div class="menu__body">
+                        <div class="menu__top">
+                            <h3 class="menu__name">Grilled Salmon</h3>
+                            <span class="menu__price">$10.00</span>
+                        </div>
+                        <p class="menu__description">Perfectly grilled salmon with seasonal vegetables.</p>
+                    </div>
+                </article>
+
+                <article class="menu__card">
+                    <div class="menu__image-wrap">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY7Dqko_c-6OkjQFpEOn8TaEOmTFJ8F-Motp64WJ_XNYa0YEWDFDHGL2I&s=10"
+                            alt="Burger"
+                            class="menu__image"
+                        />
+                    </div>
+                    <div class="menu__body">
+                        <div class="menu__top">
+                            <h3 class="menu__name">Burger</h3>
+                            <span class="menu__price">$8.00</span>
+                        </div>
+                        <p class="menu__description">Juicy sirloin steak cooked to perfection.</p>
+                    </div>
+                </article>
+
+                <article class="menu__card">
+                    <div class="menu__image-wrap">
+                        <img
+                            src="https://twocupsflour.com/wp-content/uploads/2020/12/Untitled-1200-x-1200-px-8.jpg"
+                            alt="Chocolate Cake"
+                            class="menu__image"
+                        />
+                    </div>
+                    <div class="menu__body">
+                        <div class="menu__top">
+                            <h3 class="menu__name">Chocolate Cake</h3>
+                            <span class="menu__price">$10.00</span>
+                        </div>
+                        <p class="menu__description">Warm chocolate cake with fresh fruit.</p>
+                    </div>
+                </article>
+            </div>
+            <div class="menu__actions">
+                <button type="button">View Full Menu</button>
+            </div>
+        </section>
+
+        <section class="gallery" id="gallery">
+            <div class="gallery__grid">
+                <img
+                    src="https://preview.colorlib.com/theme/appetizer/images/insta-1.jpg"
+                    alt="Gallery dish 1"
+                    class="gallery__image gallery__image--1"
+                />
+                <img
+                    src="https://preview.colorlib.com/theme/appetizer/images/insta-2.jpg"
+                    alt="Gallery dish 2"
+                    class="gallery__image gallery__image--2"
+                />
+                <img
+                    src="https://preview.colorlib.com/theme/appetizer/images/insta-3.jpg"
+                    alt="Gallery dish 3"
+                    class="gallery__image gallery__image--3"
+                />
+                <img
+                    src="https://preview.colorlib.com/theme/appetizer/images/insta-5.jpg"
+                    alt="Gallery dish 4"
+                    class="gallery__image gallery__image--4"
+                />
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="contact__form-wrapper">
+                <form id="form" class="contact__form" novalidate>
+                    <h2 class="contact__heading">Contact Us</h2>
+
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" autocomplete="name">
+                    <span class="error" id="name-error"></span>
+
+                    <label for="gmail">Email</label>
+                    <input type="email" id="gmail" name="email" autocomplete="email">
+                    <span class="error" id="gmail-error"></span>
+
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject">
+                        <option value="General">General</option>
+                        <option value="Menu">Menu</option>
+                        <option value="Support">Support</option>
+                        <option value="Location">Location</option>
+                    </select>
+                    <span class="error" id="subject-error"></span>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message"></textarea>
+                    <span class="error" id="message-error"></span>
+
+                    <span class="success" id="form-success"></span>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
+            <div class="contact__map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.850991741327!2d49.834412552042295!3d40.3678282478981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307db5cd1b74ed%3A0xb7e426b944d87a31!2sRestaurant%20Old%20Garden!5e0!3m2!1saz!2saz!4v1784202937006!5m2!1saz!2saz"
+                    width="600"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    title="Restaurant location map"
+                ></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__column">
+                <span class="footer__logo">THE HALIA</span>
+                <p class="footer__text">
+                    Welcome to our restaurant! We serve delicious meals
+                    made with fresh ingredients and provide a warm,
+                    friendly atmosphere.
+                </p>
+                <div class="footer__socials">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <nav class="footer__column" aria-label="Footer navigation">
+                <h4 class="footer__heading">Explore</h4>
+                <a href="#" class="footer__link">Home</a>
+                <a href="#about" class="footer__link">About</a>
+                <a href="#menu" class="footer__link">Menu</a>
+                <a href="#gallery" class="footer__link">Gallery</a>
+                <a href="#contact" class="footer__link">Contact</a>
+            </nav>
+            <div class="footer__column">
+                <h4 class="footer__heading">Visit Us</h4>
+                <p class="footer__text"><i class="fa-solid fa-phone" aria-hidden="true"></i> +994 50 123 45 67</p>
+                <p class="footer__text"><i class="fa-solid fa-envelope" aria-hidden="true"></i> info@restaurant.com</p>
+                <p class="footer__text"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Baku, Azerbaijan</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script src="./form.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+body{
+    background: #EEAECA;
+background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+.head{
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+.container{
+    width:min(1200px,90%);
+    margin:0 auto;
+}
+.column{
+    width: min(1200px, 90%);
+    margin: 30px auto;
+    display: flex;
+    gap: 20px;
+}
+
+.column-box{
+    flex: 1;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.column-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+.task{
+    margin-top: 15px;
+    background: #f5f5f5;
+    border-radius: 8px;
+    padding: 12px;
+}
+.task-actions{
+    display: flex;
+     justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+}
+.task-actions i{
+    cursor: pointer;
+}
+button{
+cursor: pointer;
+border:1px solid white;
+background-color: #EEAECA;
+color: white;
+padding: 3px 7px;
+}
+#todo-list,
+#progress-list,
+#done-list {
+    min-height: 250px;
+}
+
+.controls{
+    width: 400px;
+    margin: 20px auto;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+#search{
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #EEAECA;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+}
+
+#filter-value{
+    padding: 10px 15px;
+    border: 1px solid #EEAECA;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+
+    .controls{
+        width: 90%;
+        flex-direction: column;
+    }
+
+    #search,
+    #filter-value{
+        width: 100%;
+    }
+
+    .column{
+        flex-wrap: wrap;
+    }
+
+    .column-box{
+        flex: 1 1 100%;
+    }
+
+    .head{
+        text-align: center;
+    }
+
+    .add-task{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #task-input,
+    #add-btn{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 480px){
+
+    .container,
+    .column{
+        width: 95%;
+    }
+
+    .head{
+        font-size: 24px;
+    }
+
+    .column-title h2{
+        font-size: 18px;
+    }
+
+    .task{
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .task-actions i{
+        font-size: 18px;
+    }
+
+    button{
+        padding: 6px 10px;
+    }
+
+}
