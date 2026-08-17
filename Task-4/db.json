@@ -2,21 +2,51 @@
   "products": [
     {
       "id": "1",
-      "title": "Pink Hoodie",
+      "title": "Dress",
       "price": 35,
-      "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7"
+      "image": "https://images.asos-media.com/products/asos-design-crochet-detail-mini-shirt-dress-in-cream/210361440-1-cream?$n_640w$&wid=513&fit=constrain"
     },
     {
       "id": "2",
-      "title": "Black T-Shirt",
+      "title": "T-shirt",
       "price": 20,
-      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab"
+      "image": "https://images.asos-media.com/products/asos-design-volume-toggle-waist-detail-midi-skirt-in-camel/210716272-1-camel?$n_640w$&wid=513&fit=constrain"
     },
     {
       "id": "3",
-      "title": "White Sneakers",
+      "title": "Jeans",
       "price": 60,
-      "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+      "image": "https://images.asos-media.com/products/asos-design-wrap-front-denim-jacket-in-mid-blue/210961703-1-blue?$n_640w$&wid=513&fit=constrain"
+    },
+    {
+      "id": "4",
+      "title": "Black wearing",
+      "price": 50,
+      "image": "https://images.asos-media.com/products/the-north-face-glacier-100-full-zip-fleece-in-black/209297829-1-black?$n_640w$&wid=513&fit=constrain" 
+    },
+    {
+      "id": "5",
+      "title": "Shirt",
+      "price": 15,
+      "image": "https://ozmaofcalifornia.com/cdn/shop/files/OZMA_S25_3511.jpg?v=1769638877&width=1400"
+    },
+    {
+      "id": "6",
+      "title": "Top",
+      "price": 15,
+      "image": "https://ozmaofcalifornia.com/cdn/shop/files/OZMA_S25_0556.jpg?v=1770678709&width=700"
+    },
+    {
+      "id": "7",
+      "title": "Top",
+      "price": 20,
+      "image":"https://ozmaofcalifornia.com/cdn/shop/files/OZMA_S25_3039.jpg?v=1771891638&width=700"
+    },
+    {
+      "id": "8",
+      "title": "Shoes",
+      "price": 20,
+      "image":"https://images.asos-media.com/products/mango-lace-heeled-mule-in-cream/211046534-2?$n_480w$&wid=476&fit=constrain"
     }
   ]
 }
