@@ -1,12 +1,25 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 
 const AuthContext = createContext();
+
+const TOKEN_DURATION = 2 * 60 * 1000; 
 
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(() => {
     const savedUser = localStorage.getItem("user");
 
-    return savedUser ? JSON.parse(savedUser) : null;
+    if (!savedUser) {
+      return null;
+    }
+
+    const userData = JSON.parse(savedUser);
+
+    if (Date.now() >= userData.expiresAt) {
+      localStorage.removeItem("user");
+      return null;
+    }
+
+    return userData;
   });
 
   const login = (email, password) => {
@@ -14,6 +27,7 @@ export function AuthProvider({ children }) {
       const userData = {
         email,
         token: "mock-token-123",
+        expiresAt: Date.now() + TOKEN_DURATION,
       };
 
       localStorage.setItem("user", JSON.stringify(userData));
@@ -29,6 +43,22 @@ export function AuthProvider({ children }) {
     localStorage.removeItem("user");
     setUser(null);
   };
+
+  useEffect(() => {
+    if (!user) {
+      return;
+    }
+
+    const interval = setInterval(() => {
+      if (Date.now() >= user.expiresAt) {
+        localStorage.removeItem("user");
+        setUser(null);
+        window.location.href = "/login";
+      }
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, [user]);
 
   return (
     <AuthContext.Provider value={{ user, login, logout }}>

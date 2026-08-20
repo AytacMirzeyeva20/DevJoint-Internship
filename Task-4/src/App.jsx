@@ -4,10 +4,12 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import Cart from "./pages/Cart";
 import Admin from "./pages/Admin";
 import Home from "./pages/Home";
-
+import ErrorBoundary from "./components/ErrorBoundary";
+import NotFound from "./pages/NotFound";
 function App() {
   return (
     <BrowserRouter>
+    <ErrorBoundary>
       <Routes>
         <Route path="/login" element={<Login />} />
 
@@ -37,7 +39,9 @@ function App() {
             </ProtectedRoute>
           }
         />
+        <Route path="*" element={<NotFound />} />
       </Routes>
+      </ErrorBoundary>
     </BrowserRouter>
   );
 }

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import ErrorTest from "../components/ErrorTest";
 function Admin() {
   const [products, setProducts] = useState([]);
   const [form, setForm] = useState({
@@ -11,7 +11,7 @@ function Admin() {
   const [editingId, setEditingId] = useState(null);
 
   const getProducts = async () => {
-    const response = await fetch("http://localhost:3000/products");
+    const response = await fetch("http://localhost:5000/products");
     const data = await response.json();
 
     setProducts(data);
@@ -32,7 +32,7 @@ function Admin() {
     e.preventDefault();
 
     if (editingId) {
-      await fetch(`http://localhost:3000/products/${editingId}`, {
+      await fetch(`http://localhost:5000/products/${editingId}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -42,7 +42,7 @@ function Admin() {
 
       setEditingId(null);
     } else {
-      await fetch("http://localhost:3000/products", {
+      await fetch("http://localhost:5000/products", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -61,7 +61,7 @@ function Admin() {
   };
 
   const deleteProduct = async (id) => {
-    await fetch(`http://localhost:3000/products/${id}`, {
+    await fetch(`"http://localhost:5000/products"${id}`, {
       method: "DELETE",
     });
 
@@ -85,7 +85,7 @@ function Admin() {
           Admin Panel
         </h1>
 
-        {/* FORM */}
+<ErrorTest/>
         <form
           onSubmit={handleSubmit}
           className="mb-10 rounded-2xl bg-white p-6 shadow"
@@ -129,7 +129,6 @@ function Admin() {
           </button>
         </form>
 
-        {/* PRODUCTS */}
         <div className="grid gap-6 md:grid-cols-3">
           {products.map((product) => (
             <div
